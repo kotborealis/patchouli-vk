@@ -1,0 +1,3 @@
+config/default.js
+.idea/*
+.node_modules/*
