@@ -13,14 +13,15 @@ console.log(config);
     vk.on('message_new', (msg) => console.log(msg.attachments[0]));
     vk.on('message_new', async (msg) => {
         if(msg.attachments){
-            const files = await Promise.all(
+            const file = await Promise.all(
                     msg.attachments
                     .filter(({type}) => type === 'doc')
                     .filter(({doc: {size}}) => size < 1024 * 1024 * 5)
+                    .sort((a, b) => a.doc.title > b.doc.title)
                     .map(({doc: {url}}) => url)
                     .map(url => request(url))
                 );
-            console.log("GOT FILES", files);
+            console.log(file);
         }
     });
 })();
