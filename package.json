@@ -11,6 +11,7 @@
   "dependencies": {
     "chen.js": "^1.0.22",
     "minvk": "^3.0.3",
-    "request": "^2.85.0"
+    "request": "^2.85.0",
+    "tmp-promise": "^1.0.4"
   }
 }
