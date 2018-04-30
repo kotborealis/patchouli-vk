@@ -2,7 +2,9 @@
 
 ![](https://raw.githubusercontent.com/kotborealis/patchouli/master/patche.png)
 
-Pandoc wrapper for vk.com
+Pandoc wrapper for vk.com. 
+
+See [Patchouli](https://github.com/kotborealis/patchouli) for configs and so on.
 
 Builds markdown files into pdf.
 You can upload markdown files as attachments, they'll be concatenated into single file and then built into pdf.
